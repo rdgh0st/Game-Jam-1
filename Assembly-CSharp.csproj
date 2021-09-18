@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F46F0F43-5451-12AC-EA22-9F89E6746449}</ProjectGuid>
+    <ProjectGuid>{CD4E56E1-5C03-3484-12C8-897AA7F1AC71}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,11 +53,12 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\SpinScript.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\CoinCollection.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\SpinScript.cs" />
+    <Compile Include="Assets\Scripts\HurtPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />

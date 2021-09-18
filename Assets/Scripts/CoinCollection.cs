@@ -9,10 +9,11 @@ public class CoinCollection : MonoBehaviour
     [SerializeField] private AudioSource snd_GetKey;
     public float currentCoins = 0.0f;
     public float currentKeys = 0.0f;
+    private HurtPlayer hp;
     // Start is called before the first frame update
     void Start()
     {
-        
+        hp = GetComponent<HurtPlayer>();
     }
 
     // Update is called once per frame
@@ -44,6 +45,11 @@ public class CoinCollection : MonoBehaviour
             GameObject newdoor = Object.Instantiate(doorOpen);
             newdoor.gameObject.transform.position = pos;
             Debug.Log("made a door at" + pos);
+        } else if (other.name.Contains("heart"))
+        {
+            hp.health++;
+            Destroy(other.gameObject);
+            Debug.Log("Health: " + hp.health);
         }
     }
 

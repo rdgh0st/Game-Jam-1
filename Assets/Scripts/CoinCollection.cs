@@ -5,6 +5,8 @@ using UnityEngine;
 public class CoinCollection : MonoBehaviour
 {
     [SerializeField] private GameObject doorOpen;
+    [SerializeField] private AudioSource snd_GetCoin;
+    [SerializeField] private AudioSource snd_GetKey;
     public float currentCoins = 0.0f;
     public float currentKeys = 0.0f;
     // Start is called before the first frame update
@@ -26,10 +28,12 @@ public class CoinCollection : MonoBehaviour
         {
             currentCoins++;
             Destroy(other.gameObject);
+            snd_GetCoin.Play();
             Debug.Log("Coin Counter: " + currentCoins);
         } else if (other.name.Contains("key")) {
             currentKeys++;
             Destroy(other.gameObject);
+            snd_GetKey.Play();
             Debug.Log("Key Counter: " + currentKeys);
         } 
         if (other.name.Contains("door"))

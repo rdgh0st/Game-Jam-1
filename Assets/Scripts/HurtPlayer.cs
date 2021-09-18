@@ -37,6 +37,10 @@ public class HurtPlayer : MonoBehaviour
             rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
             health--;
         }
+        if ((collision.gameObject.name.Contains("saw")))
+        {
+            health--;
+        }
     }
 
 }

@@ -56,9 +56,11 @@
     <Compile Include="Assets\Scripts\SpinScript.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\CoinCollection.cs" />
+    <Compile Include="Assets\Scripts\HurtPlayer.cs" />
     <Compile Include="Assets\Scripts\PlayerControl.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\HurtPlayer.cs" />
+    <Compile Include="Assets\Scripts\MoveUpDown.cs" />
+    <Compile Include="Assets\Scripts\SpinAroundX.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SkySerie Freebie\Hdri setup.txt" />

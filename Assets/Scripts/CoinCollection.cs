@@ -37,7 +37,7 @@ public class CoinCollection : MonoBehaviour
             snd_GetKey.Play();
             Debug.Log("Key Counter: " + currentKeys);
         } 
-        if (other.name.Contains("door"))
+        if (other.name.Contains("door") && currentKeys >= 1)
         {
             currentKeys--;
             Vector3 pos = other.gameObject.transform.position;

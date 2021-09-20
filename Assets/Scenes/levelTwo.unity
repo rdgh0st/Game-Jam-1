@@ -749,7 +749,7 @@ PrefabInstance:
     - target: {fileID: 1433368863459618090, guid: b35bd120f41a06148b705d25cd285709, type: 3}
       propertyPath: cc
       value: 
-      objectReference: {fileID: 690017382}
+      objectReference: {fileID: 1627598214449761016}
     - target: {fileID: 1433368863459618094, guid: b35bd120f41a06148b705d25cd285709, type: 3}
       propertyPath: m_Name
       value: CameraRight
@@ -1350,23 +1350,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &690017382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690017373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff7a813c9bbcc7d4a9cfe4c133277ac9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorOpen: {fileID: 2500836037065160642, guid: a075dff9c76e87748b407223846dd978, type: 3}
-  snd_GetCoin: {fileID: 690017374}
-  snd_GetKey: {fileID: 690017384}
-  snd_Health: {fileID: 690017376}
-  currentKeys: 0
 --- !u!82 &690017384
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1463,21 +1446,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &690017385
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690017373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61fa5e4a58ee037419ddc7eb79185c69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  setCheckpoint: 0
-  victory: {fileID: 0}
-  snd_damage: {fileID: 690017378}
 --- !u!1001 &696941544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1700,7 +1668,7 @@ PrefabInstance:
     - target: {fileID: 7691892107854868720, guid: e4439033253e7414186cd314d68b1b1c, type: 3}
       propertyPath: cc
       value: 
-      objectReference: {fileID: 690017382}
+      objectReference: {fileID: 1627598214449761016}
     - target: {fileID: 7691892107854868721, guid: e4439033253e7414186cd314d68b1b1c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2038,7 +2006,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1450951335581798644, guid: d936a5579f98e0d418d892450aa429ec, type: 3}
       propertyPath: m_Name
-      value: floorSawX
+      value: floorsawX
       objectReference: {fileID: 0}
     - target: {fileID: 2263340432770140750, guid: d936a5579f98e0d418d892450aa429ec, type: 3}
       propertyPath: m_RootOrder
@@ -2124,7 +2092,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1450951335581798644, guid: d936a5579f98e0d418d892450aa429ec, type: 3}
       propertyPath: m_Name
-      value: floorSawX (1)
+      value: floorsawX (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2263340432770140750, guid: d936a5579f98e0d418d892450aa429ec, type: 3}
       propertyPath: m_RootOrder
@@ -2264,7 +2232,7 @@ PrefabInstance:
     - target: {fileID: 1197470854136943603, guid: 70dc404b5ba7bca4fbb1f0a68021fbf9, type: 3}
       propertyPath: cc
       value: 
-      objectReference: {fileID: 690017382}
+      objectReference: {fileID: 1627598214449761016}
     - target: {fileID: 1197470854136943615, guid: 70dc404b5ba7bca4fbb1f0a68021fbf9, type: 3}
       propertyPath: m_Name
       value: CameraBack
@@ -2543,7 +2511,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1450951335581798644, guid: d936a5579f98e0d418d892450aa429ec, type: 3}
       propertyPath: m_Name
-      value: floorSawX (2)
+      value: floorsawX (2)
       objectReference: {fileID: 0}
     - target: {fileID: 2263340432770140750, guid: d936a5579f98e0d418d892450aa429ec, type: 3}
       propertyPath: m_RootOrder
@@ -2801,7 +2769,7 @@ PrefabInstance:
     - target: {fileID: 6743723027684370915, guid: d3519198598cf504f90f476522d6aff2, type: 3}
       propertyPath: cc
       value: 
-      objectReference: {fileID: 690017382}
+      objectReference: {fileID: 1627598214449761016}
     - target: {fileID: 6743723027684370943, guid: d3519198598cf504f90f476522d6aff2, type: 3}
       propertyPath: m_Name
       value: CameraLeft
@@ -3276,7 +3244,7 @@ PrefabInstance:
     - target: {fileID: 1627598214032416403, guid: 7792b3ec9acdf2c49930290daa800e85, type: 3}
       propertyPath: snd_Rolling
       value: 
-      objectReference: {fileID: 690017377}
+      objectReference: {fileID: 1627598214449761015}
     - target: {fileID: 1627598214032416405, guid: 7792b3ec9acdf2c49930290daa800e85, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3347,6 +3315,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7792b3ec9acdf2c49930290daa800e85, type: 3}
+--- !u!82 &1627598214449761015 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 690017379, guid: 7792b3ec9acdf2c49930290daa800e85, type: 3}
+  m_PrefabInstance: {fileID: 1627598214449761014}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1627598214449761016 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 690017382, guid: 7792b3ec9acdf2c49930290daa800e85, type: 3}
+  m_PrefabInstance: {fileID: 1627598214449761014}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690017373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7a813c9bbcc7d4a9cfe4c133277ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6734379206184761944
 PrefabInstance:
   m_ObjectHideFlags: 0

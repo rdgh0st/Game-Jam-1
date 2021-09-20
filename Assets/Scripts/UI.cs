@@ -21,7 +21,7 @@ public class UI : MonoBehaviour
     void Update()
     {
         keys.text = "KEYS: " + cc.currentKeys;
-        coins.text = "COINS: " + cc.currentCoins;
-        health.text = "HEALTH: " + hp.health;
+        coins.text = "COINS: " + CoinCollection.currentCoins;
+        health.text = "HEALTH: " + HurtPlayer.health;
     }
 }

@@ -8,7 +8,7 @@ public class CoinCollection : MonoBehaviour
     [SerializeField] private AudioSource snd_GetCoin;
     [SerializeField] private AudioSource snd_GetKey;
     [SerializeField] private AudioSource snd_Health;
-    public float currentCoins = 0.0f;
+    public static float currentCoins = 0.0f;
     public float currentKeys = 0.0f;
     private HurtPlayer hp;
     // Start is called before the first frame update
@@ -50,10 +50,10 @@ public class CoinCollection : MonoBehaviour
             Debug.Log("made a door at" + pos);
         } else if (other.name.Contains("heart"))
         {
-            hp.health++;
+            HurtPlayer.health++;
             Destroy(other.gameObject);
             snd_Health.Play();
-            Debug.Log("Health: " + hp.health);
+            Debug.Log("Health: " + HurtPlayer.health);
         }
     }
 

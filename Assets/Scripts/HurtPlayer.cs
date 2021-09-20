@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class HurtPlayer : MonoBehaviour
 {
 
-    public float health = 3.0f;
+    public static float health = 3.0f;
     private Vector3 startingPos;
     public bool setCheckpoint;
     private Rigidbody rb;

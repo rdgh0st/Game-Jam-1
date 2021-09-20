@@ -11,6 +11,7 @@ public class PlayerControl : MonoBehaviour
     private bool isGrounded = true;
 
     public string currentCam;
+    [SerializeField] private AudioSource snd_Rolling, snd_Jump, snd_Land;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +23,22 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (isGrounded)
         {
-            spacePressed = true;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                spacePressed = true;
+            }
+            snd_Rolling.pitch = rb.velocity.magnitude / 3f;
+        }
+        else
+        {
+            snd_Rolling.pitch = 0;
+        }
+        if (!snd_Land.isPlaying)
+        {
+            snd_Land.volume = rb.velocity.magnitude / 4f;
+            snd_Land.pitch = rb.velocity.magnitude / 4f;
         }
     }
 
@@ -34,13 +48,19 @@ public class PlayerControl : MonoBehaviour
         {
             rb.AddForce(Vector3.up * jumpHeight, ForceMode.Impulse);
             spacePressed = false;
+            snd_Jump.Play();
         }
         MovePlayer();
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!snd_Land.isPlaying)
+            snd_Land.Play();
+    }
     private void OnCollisionStay(Collision collision)
     {
-        isGrounded = true;
+        if (collision.collider.tag.Equals("Ground"))
+            isGrounded = true;
     }
 
     private void OnCollisionExit(Collision collision)

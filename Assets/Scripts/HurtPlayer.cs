@@ -11,7 +11,7 @@ public class HurtPlayer : MonoBehaviour
     public bool setCheckpoint;
     private Rigidbody rb;
     private CameraControl cc;
-    [SerializeField] private AudioSource victory;
+    [SerializeField] private AudioSource victory, snd_damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,10 +40,14 @@ public class HurtPlayer : MonoBehaviour
         {
             rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
             health--;
+            snd_damage.pitch = 0.5f + (health * .2f);
+            snd_damage.Play();
         }
         if ((collision.gameObject.name.Contains("saw")))
         {
             health--;
+            snd_damage.pitch = 0.5f + (health * .2f);
+            snd_damage.Play();
         }
         if (collision.gameObject.name.Contains("button"))
         {

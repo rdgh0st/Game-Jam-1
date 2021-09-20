@@ -1568,8 +1568,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 0.61635196, b: 0.4764151, a: 1}
+  m_Intensity: 1.35
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1626,13 +1626,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.26064846, y: -0.32805425, z: 0.09468801, w: 0.90303767}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 32.2, y: -39.93, z: 0}
 --- !u!1001 &723328376
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3245,6 +3245,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 256663178}
     m_Modifications:
+    - target: {fileID: 690017392, guid: 7792b3ec9acdf2c49930290daa800e85, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 98cdcce25e0fdfd449c0a6abfd305a7d, type: 3}
     - target: {fileID: 1627598214032416402, guid: 7792b3ec9acdf2c49930290daa800e85, type: 3}
       propertyPath: back
       value: 

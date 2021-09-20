@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5320000298635620862}
   - component: {fileID: 8733994783166824945}
   m_Layer: 0
-  m_Name: floorSawX
+  m_Name: floorsawX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

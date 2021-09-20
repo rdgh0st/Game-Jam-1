@@ -38,7 +38,7 @@ public class HurtPlayer : MonoBehaviour
     {
         if (collision.gameObject.name.Contains("spikes"))
         {
-            rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * 4, ForceMode.Impulse);
             health--;
             snd_damage.pitch = 0.5f + (health * .2f);
             snd_damage.Play();

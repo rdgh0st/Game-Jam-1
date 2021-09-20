@@ -11,7 +11,7 @@ public class PlayerControl : MonoBehaviour
     private bool isGrounded = true;
 
     public string currentCam;
-    [SerializeField] private AudioSource snd_Rolling, snd_Jump, snd_Land;
+    [SerializeField] private AudioSource snd_Rolling, snd_Jump, snd_Land, mus_GameMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +39,10 @@ public class PlayerControl : MonoBehaviour
         {
             snd_Land.volume = rb.velocity.magnitude / 4f;
             snd_Land.pitch = rb.velocity.magnitude / 4f;
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            mus_GameMusic.volume = mus_GameMusic.volume == 0 ? 0.5f : 0f;
         }
     }
 

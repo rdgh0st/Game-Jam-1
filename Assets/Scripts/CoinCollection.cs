@@ -7,6 +7,7 @@ public class CoinCollection : MonoBehaviour
     [SerializeField] private GameObject doorOpen;
     [SerializeField] private AudioSource snd_GetCoin;
     [SerializeField] private AudioSource snd_GetKey;
+    [SerializeField] private AudioSource snd_Health;
     public float currentCoins = 0.0f;
     public float currentKeys = 0.0f;
     private HurtPlayer hp;
@@ -41,14 +42,17 @@ public class CoinCollection : MonoBehaviour
         {
             currentKeys--;
             Vector3 pos = other.gameObject.transform.position;
+            Quaternion rot = other.gameObject.transform.rotation;
             Destroy(other.gameObject);
             GameObject newdoor = Object.Instantiate(doorOpen);
+            newdoor.gameObject.transform.rotation = rot;
             newdoor.gameObject.transform.position = pos;
             Debug.Log("made a door at" + pos);
         } else if (other.name.Contains("heart"))
         {
             hp.health++;
             Destroy(other.gameObject);
+            snd_Health.Play();
             Debug.Log("Health: " + hp.health);
         }
     }

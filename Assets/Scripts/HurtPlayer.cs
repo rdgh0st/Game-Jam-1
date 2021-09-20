@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HurtPlayer : MonoBehaviour
 {
@@ -9,10 +10,13 @@ public class HurtPlayer : MonoBehaviour
     private Vector3 startingPos;
     public bool setCheckpoint;
     private Rigidbody rb;
+    private CameraControl cc;
+    [SerializeField] private AudioSource victory;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        cc = GetComponent<CameraControl>();
     }
 
     // Update is called once per frame
@@ -40,6 +44,19 @@ public class HurtPlayer : MonoBehaviour
         if ((collision.gameObject.name.Contains("saw")))
         {
             health--;
+        }
+        if (collision.gameObject.name.Contains("button"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        if (collision.gameObject.name.Contains("finish"))
+        {
+            cc.forward.enabled = true;
+            cc.back.enabled = false;
+            cc.left.enabled = false;
+            cc.right.enabled = false;
+            victory.Play();
+            Destroy(gameObject);
         }
     }
 

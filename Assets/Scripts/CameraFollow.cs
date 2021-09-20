@@ -18,9 +18,9 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        forward.transform.position = ball.transform.position + new Vector3(0f, 2.5f, -3f);
-        right.transform.position = ball.transform.position + new Vector3(3f, 2.5f, 0f);
-        left.transform.position = ball.transform.position + new Vector3(-3f, 2.5f, -0f);
-        back.transform.position = ball.transform.position + new Vector3(0f, 2.5f, 3f);
+        forward.transform.position = ball.transform.position + new Vector3(0f, 3.5f, -2f);
+        right.transform.position = ball.transform.position + new Vector3(2f, 3.5f, 0f);
+        left.transform.position = ball.transform.position + new Vector3(-2f, 3.5f, -0f);
+        back.transform.position = ball.transform.position + new Vector3(0f, 3.5f, 2f);
     }
 }

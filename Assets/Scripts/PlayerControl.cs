@@ -6,7 +6,7 @@ public class PlayerControl : MonoBehaviour
 {
     private Rigidbody rb;
     private float speed = 3.0f;
-    private float jumpHeight = 10.0f;
+    private float jumpHeight = 5.0f;
     private bool spacePressed = false;
     private bool isGrounded = true;
 

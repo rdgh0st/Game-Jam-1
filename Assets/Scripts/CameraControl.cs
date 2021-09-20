@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    [SerializeField] private Camera back;
-    [SerializeField] private Camera left;
-    [SerializeField] private Camera right;
-    [SerializeField] private Camera forward;
+    [SerializeField] public Camera back;
+    [SerializeField] public Camera left;
+    [SerializeField] public Camera right;
+    [SerializeField] public Camera forward;
     private bool leftActive;
     private bool rightActive;
     private bool forwardActive;
